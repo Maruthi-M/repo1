@@ -1,0 +1,55 @@
+<b>NgIf with HTML Elements </b><br/>
+<!--<p *ngIf="isValid">
+	Data is valid.
+</p>
+<p *ngIf="!isValid">
+	Data is not valid.
+</p>-->
+<!--<input type="button" value="click" (click)="click()">
+<p *ngIf="isValid">
+	Data is valid.
+</p>-->
+<!--creating component and added in click method-->
+<!--<input type="button" value="click" (click)="click()">
+<app-myapp1comp1 *ngIf="count%3==0||count%5==0">
+  data is valid
+</app-myapp1comp1>-->
+
+<!--<div *ngFor="let id of ids">
+Id is {{id}}
+  <table border="2">
+    <tr>
+      <td> {{id}}</td>
+    </tr>
+  </table>--> 
+  <!--<div *ngIf="id%2 == 0">
+	<div [ngClass]="'one'">Even Number</div>
+  </div> 	
+  <div *ngIf="id%2 == 1">
+	<div [ngClass]="'two'">Odd Number</div>
+  </div> 
+</div>-->	
+
+<div *ngFor="let usr of users">
+  <!--existing code-----Id is {{usr.age}}
+  <div *ngIf="usr.age%2 == 0">
+	<div [ngClass]="'one'">Even Number</div>
+  </div> 	
+  <div *ngIf="usr.age%2 == 1">
+	<div [ngClass]="'two'">Odd Number</div>
+  </div> 	-->
+  <table border="1">
+    <tr>
+      <th>name</th>
+     <th>age</th> 
+    <th>email </th>
+  </tr>
+    <tbody>
+      <tr>
+        <td>{{usr.name}}</td>
+        <td>{{usr.age}}</td>
+        <td>{{usr.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
